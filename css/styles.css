@@ -1,0 +1,52 @@
+
+ul{
+    color:white;
+}
+hr{
+    border-style: none;
+    border-top-style: dashed;
+    border-width: 10px;
+    border-color: #4cbbb9;
+}
+.hr1{
+    border-style: none;
+    border-top-style: dashed;
+    border-width: 10px;
+    border-color: #f5a8a8;
+}
+h3{
+    font-family: "Copperplate Gothic Light";
+    font-size: 30px;
+    color: #0779e4;
+}
+.background1{
+    background-color: #77d8d8;
+    font-family: "Roboto Light";
+    border-style: none;
+    border-top-style: dashed;
+    border-width: 10px;
+    border-color: #4cbbb9;
+    color: #00263b;
+
+}
+.background2{
+    background-color: #fab7b7;
+    font-family: "Comic Sans MS";
+    border-style: none;
+    border-top-style: dashed;
+    border-width: 10px;
+    border-color: #f5a8a8;
+    color: #c70039;
+
+}
+#judul1{
+    font-family: "Candara";
+    font-size: 50px;
+    color: #0779e4;
+}
+#judul2{
+    font-family: "Lucida Bright";
+    font-size: 50px;
+    color: #900c3f;
+}
+
