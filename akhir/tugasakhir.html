@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/">
+    <title>Hello, world!</title>
+</head>
+<body>
+<header>
+<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img src="logo/logofull.png" width="190" height="72" alt=""></a>
+    <nav >
+        <ul class="list-group list-group-horizontal">
+            <li class="list-group-item"><a href="https://www.facebook.com/yinboba/" target="_blank" title="yinboba on facebook"><svg class="svg-facebook" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="18" height="18">
+                <title>icon-facebook</title>
+                <path class="svgfill" d="M46.19,80V43.51H58.44l1.83-14.22H46.19V20.21c0-4.12,1.14-6.92,7-6.92h7.53V.56A100.77,100.77,0,0,0,49.8,0C38.94,0,31.51,6.63,31.51,18.8V29.29H19.23V43.51H31.51V80Z"></path>
+            </svg>
+            </a></li>
+            <li class="list-group-item"><a href="https://www.instagram.com/yinboba/" target="_blank" title="yinboba on instagram"><svg class="svg-instagram" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="18" height="18">
+                <title>icon-instagram</title>
+                <path class="svgfill" d="M40,7.21c10.68,0,11.95,0,16.16.23a22.13,22.13,0,0,1,7.43,1.38,12.39,12.39,0,0,1,4.6,3,12.39,12.39,0,0,1,3,4.6,22.13,22.13,0,0,1,1.38,7.43c.19,4.22.23,5.48.23,16.16s0,11.95-.23,16.16a22.13,22.13,0,0,1-1.38,7.43,13.25,13.25,0,0,1-7.59,7.59,22.13,22.13,0,0,1-7.43,1.38c-4.22.19-5.48.23-16.16.23s-11.95,0-16.16-.23a22.13,22.13,0,0,1-7.43-1.38,12.39,12.39,0,0,1-4.6-3,12.39,12.39,0,0,1-3-4.6,22.13,22.13,0,0,1-1.38-7.43c-.19-4.22-.23-5.48-.23-16.16s0-11.95.23-16.16a22.13,22.13,0,0,1,1.38-7.43,12.39,12.39,0,0,1,3-4.6,12.39,12.39,0,0,1,4.6-3,22.13,22.13,0,0,1,7.43-1.38c4.22-.19,5.48-.23,16.16-.23M40,0C29.14,0,27.77,0,23.51.24A29.36,29.36,0,0,0,13.8,2.1,19.61,19.61,0,0,0,6.71,6.71,19.61,19.61,0,0,0,2.1,13.8,29.36,29.36,0,0,0,.24,23.51C0,27.77,0,29.14,0,40S0,52.23.24,56.49A29.36,29.36,0,0,0,2.1,66.2a19.61,19.61,0,0,0,4.61,7.08A19.61,19.61,0,0,0,13.8,77.9a29.36,29.36,0,0,0,9.71,1.86C27.77,80,29.14,80,40,80s12.23,0,16.49-.24A29.36,29.36,0,0,0,66.2,77.9,20.45,20.45,0,0,0,77.9,66.2a29.36,29.36,0,0,0,1.86-9.71C80,52.23,80,50.86,80,40s0-12.23-.24-16.49A29.36,29.36,0,0,0,77.9,13.8a19.61,19.61,0,0,0-4.61-7.08A19.61,19.61,0,0,0,66.2,2.1,29.36,29.36,0,0,0,56.49.24C52.23,0,50.86,0,40,0Z"></path>
+                <path class="svgfill" d="M40,19.46A20.54,20.54,0,1,0,60.54,40,20.54,20.54,0,0,0,40,19.46Zm0,33.87A13.33,13.33,0,1,1,53.33,40,13.33,13.33,0,0,1,40,53.33Z"></path>
+                <circle class="svgfill" cx="61.35" cy="18.65" r="4.8"></circle>
+            </svg>
+            </a></li>
+            <li class="list-group-item"><a href="https://twitter.com/yinboba" target="_blank" title="yinboba on twitter"><svg class="svg-twitter" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="18" height="18">
+                <title>icon-twitter</title>
+                <path class="svgfill" d="M25.16,72.5c30.19,0,46.7-25,46.7-46.7,0-.71,0-1.42,0-2.12A33.4,33.4,0,0,0,80,15.18a32.76,32.76,0,0,1-9.43,2.58,16.47,16.47,0,0,0,7.22-9.08,32.89,32.89,0,0,1-10.42,4,16.43,16.43,0,0,0-28,15A46.6,46.6,0,0,1,5.57,10.49,16.43,16.43,0,0,0,10.65,32.4,16.29,16.29,0,0,1,3.2,30.35v.21A16.42,16.42,0,0,0,16.37,46.65,16.39,16.39,0,0,1,9,46.93a16.43,16.43,0,0,0,15.33,11.4,32.93,32.93,0,0,1-20.38,7A33.41,33.41,0,0,1,0,65.13a46.47,46.47,0,0,0,25.16,7.36"></path>
+            </svg>
+            </a></li>
+        </ul><!-- .socialmedia__links -->
+    </nav>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+
+                <a href="#abouts" class="nav-link">About</a>
+
+            </li>
+            <li class="nav-item">
+
+                <a href="#carouselpost" class="nav-link">News</a>
+
+            </li>
+            <li class="nav-item">
+
+                <a href="#kirikonten" class="nav-link">Menu</a>
+
+            </li>
+            <li class="nav-item">
+
+                <a href="#lokasi" class="nav-link">Location</a>
+
+            </li>
+            <li class="nav-item">
+
+                <a href="#kontak" class="nav-link">Contact Us</a>
+
+            </li>
+
+            <li>
+
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="text" id="myInput" onkeyup="myFunction(); myFunctions();myFunctione(); myFunctiono(); myFunctionx()" placeholder="Search for boba.." title="Type in a name" aria-label="search">
+                </form>
+            </li>
+        </ul>
+    </div>
+</nav>
+</header>
+
+<main role="main" >
+
+    <div class="row ">
+        <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <br><br><br><br>
+                    <img class="first-slide embed-responsive" src="logo/back1.png" alt="First slide">
+
+                </div>
+                <div class="carousel-item">
+                    <br><br><br><br>
+                    <img class="second-slide embed-responsive" src="logo/back2.png" alt="Second slide">
+
+                </div>
+                <div class="carousel-item active">
+                    <br><br><br><br>
+                    <img class="third-slide embed-responsive" src="logo/back3.png" alt="Third slide">
+
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+
+
+        <div class="col-sm-12 col-md-12 col-lg-8 " id="kirikonten" style="padding: 0" align="center">
+
+           <ul class="list-group list-group-horizontal" id="myUL">
+                <li style="margin: 0" class="list-group-itemkw list-group-item-info">
+                    <img src="rasa/classicmilkteaboba.jpg" alt="" width="200" height="300">
+                    <a class="nav-link disabled" href=""><h2>Classic Milk Tea</h2></a>
+                    <p>Black tea, milk, ice, and chewy tapioca pearls, all shaken together like a martini and served with that famously fat straw to accommodate the marbles of tapioca that cluster at the bottom of the cup.The masterpiece that started it all. Its rich and creamy flavor combined with its smooth tea flavor is sure to send you straight to your happy.
+                        <place class="invisible">
+                            <br>classic milk tea</place></p>
+
+                </li>
+
+                <li style="margin: 0" class="list-group-itemkw list-group-item-info">
+                    <img src="rasa/thaimilkteaboba.jpg" width="200" height="300">
+                    <a class="nav-link disabled" href=""><h2>Thai Milk Tea</h2></a>
+                    <p>Thai tea is sweeping the nation with it’s creamy, sweet uniqueness. The orange color comes from a special kind of tea called Ceylon tea, which is actually one of the most popular bases for iced tea in the world. Although sadly, the intense brightness of the orange might be from the help of food coloring. Either way, this flavor brings the streets of Thailand directly to your mouth.
+                        <place class="invisible">
+                            <br>thai milk tea</place></p>
+                </li>
+
+                <li style="margin: 0;" class="list-group-itemkw list-group-item-info">
+                    <img src="rasa/taromilkteaboba.jpg" width="200" height="300">
+                    <a class="nav-link disabled" href=""><h2>Taro Milk Tea</h2></a>
+                    <p>This fun purple drink is made from a slightly sweet Asian root called Taro. Don’t let the unique name or color scare you away, or you’re sure to regret it. Taro is difficult to describe but is often said to have a nutty, earthy, vanilla-esque flavor. Many people swear it tastes just like cookies and cream. You decide!
+                        <place class="invisible">
+                            <br>taro milk tea</place></p>
+                </li>
+            </ul>
+            <ul class="list-group list-group-horizontal" id="myULl">
+                <li style="margin: 0" class="list-group-itemkw list-group-item-info">
+                    <img src="rasa/matchamilkteaboba.jpg" width="200" height="300">
+                    <a class="nav-link disabled" href=""><h2>Matcha Milk Tea</h2></a>
+                    <p>This delicious drink brings all the health benefits of Japanese-style green tea with the texture of bubble tea. Matcha is yet another Asian flavor that has climbed its way up in popularity around the world. It’s a powerful and herbal tea flavor that will please even the most distinguished palate.
+                        <place class="invisible">
+                            <br>matcha milk tea</place></p>
+                </li>
+                <li style="margin: 0" class="list-group-itemkw list-group-item-info">
+                    <img src="rasa/vietnamesecoldbrewboba.jpg" width="200" height="300">
+                    <a class="nav-link disabled" href=""><h2>Vietnamese Cold Brew</h2></a>
+                    <p>While these are not completely authentic Vietnamese Iced Coffees…they are a great stand in and making them into a smoothie…out of this world! I seriously made these smoothies three times and the boba…five million times. To test it, to make sure I got it right just for you. Who am I kidding? I'm addicted!
+                        <place class="invisible">
+                            <br>vietnamese cold brew</place></p>
+                </li>
+                <li style="margin: 0" class="list-group-itemkw list-group-item-info">
+                    <img src="rasa/strawberrybobasmoothie.jpg" width="200" height="300">
+                    <a class="nav-link disabled" href=""><h2>Strawberry Smoothie</h2></a>
+                    <p>Bring back childhood memories with this fresh take on the simple but delicious strawberry milk. Slightly tangy but oh so sweet, strawberries are America’s best friend. Now in an even more interesting way. Slushie or liquid form, this bubble tea will leave you energized and satisfied for the rest of your day.
+                        <place class="invisible">
+                            <br>strawberry smoothie</place></p>
+                </li>
+            </ul>
+            <ul style="margin: 0" class="list-group list-group-horizontal" id="myULe">
+                <li style="margin: 0" class="list-group-itemkw list-group-item-info">
+                    <img style="margin: 0" src="rasa/mangobobasmoothie.jpg" width="200" height="300">
+                    <a class="nav-link disabled" href=""><h2>Mango Smoothie</h2></a>
+                    <p>For those with a fruity palate and a tropical flair, this is the bubble tea for you. Mango, in our personal opinion, is best to drink in slushie form. When it’s a hot, summer day, what could be better than a freezing cold drink that allows you to drift away to your favorite beach destination.
+                        <place class="invisible">
+                            <br>mango smoothie</place></p>
+                </li>
+                <li style="margin: 0" class="list-group-itemkw list-group-item-info">
+                    <img src="rasa/oreoboba.jpg" width="200" height="300">
+                    <a class="nav-link disabled" href=""><h2>Oreo Milk Tea</h2></a>
+                    <p>This drink is made from a base of Gong Cha’s black tea leaves, milk, chocolate powder and crushed up pieces of oreo. This drink tastes like a blend of ice tea and an oreo milkshake.The boba is always fresh and chewy and blends well with any of their teams.
+                        <place class="invisible">
+                            <br>oreo milk tea</place></p>
+                </li>
+                <li style="margin: 0" class="list-group-itemkw list-group-item-info">
+                    <img src="rasa/bluemagiclycheeboba.jpg" width="200" height="300">
+                    <a class="nav-link disabled" href=""><h2>Blue Magic Lychee</h2></a>
+                    <p>A dream come true if you like boba, slushies, and/or of-the-moment superfoods. The sweet, tropical flavor of lychee is the perfect foil for the nutrient-rich—albeit swampy-tasting—blue-green algae. The addition of boba makes this already-fun electric-blue drink really cool to look at.
+                        <place class="invisible">
+                            <br>blue magic lychee</place></p>
+                </li>
+            </ul>
+            <ul style="margin: 0" class="list-group list-group-horizontal" id="myULo">
+
+                <li style="margin: 0" class="list-group-itemkw list-group-item-info">
+                    <img src="rasa/yinbobatea.jpg" width="200" height="300">
+                    <a class="nav-link disabled" href=""><h2>Yin Special</h2></a>
+                    <p>Chinese bubble tea chain MuYoo encourages you to taste their soaked cooked pearls in brown sugar with vanilla coconut milk mixed with black tea individually to experience the contrast in flavours before mixing it all up. Brown sugar is also creamier and packs a higher sugar content than the average bubble tea.
+                        <place class="invisible">
+                            <br>yin special</place></p>
+                </li>
+                <li style="margin: 0" class="list-group-itemkw list-group-item-info">
+                    <img src="rasa/yangboba.jpg" width="200" height="300">
+                    <a class="nav-link disabled" href=""><h2>Yang Special</h2></a>
+                    <p>One sip of this will take to a different world. You will feel the strong coffee waking you up and the sweetness of a little milk making you smile. Just don’t get to addicted too this boba because we have much more surprises for you. spending time with friends with a cup of this latte is definitely the right answer.
+                        <place class="invisible">
+                            <br>yang special</place></p>
+                </li>
+                <li style="margin: 0" class="list-group-itemkw list-group-item-info">
+                    <img src="rasa/yinyangboba.jpg" width="200" height="300">
+                    <a class="nav-link disabled" href=""><h2>Yin and Yang</h2></a>
+                    <p>Iced milk, a rising star in the world of bubble tea, is a refreshing, caffeine-free, and kid-friendly alternative to milk tea. Popularized by SoCal’s boba chain, Half & Half, iced milk is exactly what it sounds like, plus some Egg Pudding,Honey Boba and Grass Jelly Honey. It’s rich and sophisticatedly smoky, bearing notes that remind you of a good cup of latte.
+                        <place class="invisible">
+                            <br>yin and yang special</place></p>
+                </li>
+            </ul>
+            <ul class="list-group list-group-horizontal " id="myULx">
+
+
+                <li style="margin: 0" class="list-group-itemkw list-group-item-info">
+                    <img src="rasa/honeydewboba.png" width="200" height="300">
+                    <a class="nav-link disabled" href=""><h2>Honeydew</h2></a>
+                    <p>One of the most popular flavors worldwide, this melon drink is also amazingly refreshing in the blazing summer heat. It’s also the perfect way to mix drinking boba while also getting your nutrients! If you love fruit, this is your drink to start with. Be adventurous, and find out why this is the staple flavor of so many Asian households.
+                        <place class="invisible">
+                            <br>honeydew</place></p>
+                </li>
+                <li style="margin: 0" class="list-group-itemkw list-group-item-info">
+                    <img src="rasa/greenappleboba.jpg" width="200" height="300">
+                    <a class="nav-link disabled" href=""><h2>Green Apple Smoothie</h2></a>
+                    <p>The Green apple's white flesh is hard, crispy, and juicy. The flavor of Green apples is extremely acidic, sometimes to the point of not having other taste, but generally refreshing. Your mouth will relish in the crisp and refreshing Boba.
+                        <place class="invisible">
+                            <br>green apple smoothie</place></p>
+                </li>
+                <li style="margin: 0" class="list-group-itemkw list-group-item-info">
+                    <img src="rasa/peachbobasmoothie.jpg" width="200" height="300">
+                    <a class="nav-link disabled" href=""><h2>Peach Smoothie</h2></a>
+                    <p>Fresh peaches are a moderate source of antioxidants and vitamin C which is required for the building of connective tissue inside the human body. Excellent on frozen yogurt and light iced teas, your dessert experience will be elevated. Your taste will delight in the long-lasting and velvety flavors of fresh peaches with each bite of delicately textured Boba.
+                        <place class="invisible">
+                            <br>peach smoothie</place></p>
+                </li>
+            </ul>
+
+        </div>
+
+        <aside class="col-lg-4 col-md-12 col-sm-12" style="padding: 0" align="center">
+
+            <div class="p-4  bg-light" id="abouts">
+                <img src="logo/kawai.png" alt="" >
+                <h1>the philosophies.</h1>
+                <p>The ubiquitous yin-yang symbol holds its roots in Taoism/Daoism, a Chinese religion and philosophy. The yin, the dark swirl, is associated with shadows, femininity, and the trough of a wave. The word “boba” can refer to either a broad category of chunky drinks — including everything from iced tea with tapioca pearls to fresh juice loaded with fruity bits — or black tapioca pearls themselves. Boba tea, bubble tea, and pearl milk tea — in Taiwan, zhenzhu naicha (珍珠奶茶) — are essentially different names for the same thing; the monikers differ by location, but also personal preference. (In the U.S., the East Coast favors bubble tea, while the West prefers boba.)</p>
+
+            </div>
+            <div id="carouselcontent" class="carousel slide" data-ride="carousel">
+
+
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+
+                        <img class="first-slide embed-responsive" src="konten/000.png" alt="First slide">
+
+                    </div>
+                    <div class="carousel-item">
+
+                        <img class="second-slide embed-responsive" src="konten/001.png" alt="Second slide">
+
+                    </div>
+                    <div class="carousel-item active">
+
+                        <img class="third-slide embed-responsive" src="konten/002.png" alt="Third slide">
+
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselcontent" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselcontent" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div id="carouselpost" class="carousel slide" data-ride="carousel">
+
+
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+
+                        <img class="first-slide embed-responsive" src="konten/pos1.png" alt="First slide">
+
+                    </div>
+                    <div class="carousel-item">
+
+                        <img class="second-slide embed-responsive" src="konten/pos02.png" alt="Second slide">
+
+                    </div>
+                    <div class="carousel-item active ">
+                        <img class="third-slide embed-responsive" src="konten/pos03.png" alt="Second slide">
+
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselpost" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselpost" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <img id="lokasi" class="second-slide embed-responsive" src="konten/pos2.png" alt="Second slide">
+            <div >
+                <img id="kontak" class="third-slide embed-responsive" src="konten/pos3.png" alt="Second slide">
+                <div class="container" style="position: relative;bottom: 2px;right: 2px">
+                    <div class="carousel-caption text-right ">
+                        <h3>Contact Us</h3>
+                        <p>
+                            <strong>Yin Boba Center</strong>
+                            <br>Jl. Saxsophone no.34, Jatimulyo, Kec. Lowokwaru,<br>
+                            Kota Malang, Jawa Timur 65143 Indonesia
+                            <br> (0341) 366203
+                            <br>Email:
+                            <a href="mailto:yinboba@yin.com">yinboba@yin.com</a>
+                            <br>
+                            Instagram: <a href="instagram.com/yinboba">@yinboba</a>
+                            <br>
+                            Facebook: <a href="facebook.com/yinboba">Yin Boba</a>
+                            <br>
+                            Twitter: <a href="twitter.com/yinboba">@yinboba</a>
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class=""></div>
+            <script src="https://cdn.jsdelivr.net/sharer.js/latest/sharer.min.js"></script>
+
+
+        </aside><!-- /.blog-sidebar -->
+        <footer class="container col-lg-12 col-md-12 col-sm-12 bg-light modal-footer ">
+            <div class="container " id="manipulate">
+
+                <div class="social" >
+                    <a href="#" id="share-wa" class="sharer button"><i class="fa fa-3x fa-whatsapp"></i></a>
+                    <a href="#" id="share-fb" class="sharer button"><i class="fa fa-3x fa-facebook-square"></i></a>
+                    <a href="#" id="share-tw" class="sharer button"><i class="fa fa-3x fa-twitter-square"></i></a>
+                    <a href="#" id="share-li" class="sharer button"><i class="fa fa-3x fa-linkedin-square"></i></a>
+                    <a href="#" id="share-gp" class="sharer button"><i class="fa fa-3x fa-google-plus-square"></i></a>
+                    <a href="#" id="share-em" class="sharer button"><i class="fa fa-3x fa-envelope-square"></i></a>
+                </div>
+
+            </div>
+
+            <p class="float-right" ><a href="#">Back to top</a></p>
+        </footer>
+
+    </div><!-- /.row -->
+
+</main>
+
+
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script>
+    function myFunction() {
+        var input, filter, ul, li, a, i,h2,p, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+        for (i = 0; i < li.length; i++) {
+            h2 = li[i].getElementsByTagName("h2")[0];
+            txtValue = h2.textContent || h2.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+        for (i = 0; i < li.length; i++) {
+            p = li[i].getElementsByTagName("p")[0];
+            txtValue = p.textContent || p.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }}}
+
+            function myFunctiono() {
+        var input, filter, ul, li, a, i,h2,p, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myULo");
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+        for (i = 0; i < li.length; i++) {
+            h2 = li[i].getElementsByTagName("h2")[0];
+            txtValue = h2.textContent || h2.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+        for (i = 0; i < li.length; i++) {
+            p = li[i].getElementsByTagName("p")[0];
+            txtValue = p.textContent || p.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }}}
+
+            function myFunctione() {
+        var input, filter, ul, li, a, i,h2,p, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myULe");
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+        for (i = 0; i < li.length; i++) {
+            h2 = li[i].getElementsByTagName("h2")[0];
+            txtValue = h2.textContent || h2.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+        for (i = 0; i < li.length; i++) {
+            p = li[i].getElementsByTagName("p")[0];
+            txtValue = p.textContent || p.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }}}
+    function myFunctions() {
+        var input, filter, ul, li, a, i,h2,p, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myULl");
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+        for (i = 0; i < li.length; i++) {
+            h2 = li[i].getElementsByTagName("h2")[0];
+            txtValue = h2.textContent || h2.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+        for (i = 0; i < li.length; i++) {
+            p = li[i].getElementsByTagName("p")[0];
+            txtValue = p.textContent || p.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }}}
+            function myFunctionx() {
+        var input, filter, ul, li, a, i,h2,p, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myULx");
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+        for (i = 0; i < li.length; i++) {
+            h2 = li[i].getElementsByTagName("h2")[0];
+            txtValue = h2.textContent || h2.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+        for (i = 0; i < li.length; i++) {
+            p = li[i].getElementsByTagName("p")[0];
+            txtValue = p.textContent || p.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }}}
+    document.addEventListener("DOMContentLoaded", function(event) {
+
+// Uses sharer.js
+//  https://ellisonleao.github.io/sharer.js/#twitter
+        var url = window.location.href;
+        var title = document.title;
+        var subject = "Read this good article";
+        var via = "yourTwitterUsername";
+        //console.log( url );
+        //console.log( title );
+
+//facebook
+        $('#share-wa').attr('data-url', url).attr('data-title', title).attr('data-sharer', 'whatsapp');
+//facebook
+        $('#share-fb').attr('data-url', url).attr('data-sharer', 'facebook');
+//twitter
+        $('#share-tw').attr('data-url', url).attr('data-title', title).attr('data-via', via).attr('data-sharer', 'twitter');
+//linkedin
+        $('#share-li').attr('data-url', url).attr('data-sharer', 'linkedin');
+// google plus
+        $('#share-gp').attr('data-url', url).attr('data-title', title).attr('data-sharer', 'googleplus');
+        // email
+        $('#share-em').attr('data-url', url).attr('data-title', title).attr('data-subject', subject).attr('data-sharer', 'email');
+
+//Prevent basic click behavior
+        $( ".sharer button" ).click(function() {
+            event.preventDefault();
+        });
+
+
+// only show whatsapp on mobile devices
+        var isMobile = false; //initiate as false
+// device detection
+        if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent)
+            || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(navigator.userAgent.substr(0,4))) {
+            isMobile = true;
+        }
+
+        if ( isMobile == true ) {
+            $("#share-wa").hide();
+        }
+
+
+
+
+
+
+
+    });
+</script>
