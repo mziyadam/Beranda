@@ -6136,9 +6136,7 @@ a.close.disabled {
     .example {
         font-size: 1vw;
     }
-    div.kecil{
-        display: none;
-    }
+
     .examples {
         font-size: 1vw;
     }
@@ -6148,9 +6146,7 @@ a.close.disabled {
     .example {
         font-size: 3vw;
     }
-    div.besar{
-        display: none;
-    }
+
     .examples {
         font-size: 2vw;
     }
@@ -6159,12 +6155,16 @@ a.close.disabled {
 
 }
 
-@media screen and (min-width: 993px) {
-
+@media screen and (min-width: 768px) {
+    div.kecil{
+        display: none;
+    }
 }
 
-@media screen and (max-width: 992px) {
-
+@media screen and (max-width: 767px) {
+    div.besar{
+        display: none;
+    }
 }
 .modal-footer {
     display: -ms-flexbox;
