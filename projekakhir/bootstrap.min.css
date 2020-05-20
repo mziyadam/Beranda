@@ -6132,15 +6132,27 @@ a.close.disabled {
 
 }
 
-@media screen and (min-width: 993px) {
+@media screen and (min-width: 992px) {
     .example {
+        font-size: 1vw;
+    }
+    div.kecil{
+        display: none;
+    }
+    .examples {
         font-size: 1vw;
     }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
     .example {
         font-size: 3vw;
+    }
+    div.besar{
+        display: none;
+    }
+    .examples {
+        font-size: 2vw;
     }
 }
 .examples {
@@ -6148,15 +6160,11 @@ a.close.disabled {
 }
 
 @media screen and (min-width: 993px) {
-    .examples {
-        font-size: 1vw;
-    }
+
 }
 
 @media screen and (max-width: 992px) {
-    .examples {
-        font-size: 2vw;
-    }
+
 }
 .modal-footer {
     display: -ms-flexbox;
