@@ -6159,10 +6159,16 @@ a.close.disabled {
     div.kecil{
         display: none;
     }
+    li.kecil{
+        display:none;
+    }
 }
 
 @media screen and (max-width: 767px) {
     div.besar{
+        display: none;
+    }
+    li.besar{
         display: none;
     }
 }
