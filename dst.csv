@@ -1,13 +1,13 @@
-waktu;paket;frekuensi;prioritas;gangguan
-pendek;besar;sedang;rendah;gangguan
-pendek;kecil;tinggi;rendah;normal
-pendek;kecil;sedang;tinggi;gangguan
-pendek;kecil;tinggi;rendah;normal
-pendek;kecil;sedang;tinggi;normal
-panjang;besar;sedang;rendah;normal
-panjang;kecil;tinggi;tinggi;gangguan
-pendek;besar;sedang;rendah;normal
-panjang;kecil;rendah ;tinggi;normal
-pendek;kecil;tinggi;tinggi;normal
-panjang;besar;tinggi;tinggi;normal
-panjang;kecil;rendah ;tinggi;normal
+waktu,paket,frekuensi,prioritas,gangguan
+pendek,besar,sedang,rendah,gangguan
+pendek,kecil,tinggi,rendah,normal
+pendek,kecil,sedang,tinggi,gangguan
+pendek,kecil,tinggi,rendah,normal
+pendek,kecil,sedang,tinggi,normal
+panjang,besar,sedang,rendah,normal
+panjang,kecil,tinggi,tinggi,gangguan
+pendek,besar,sedang,rendah,normal
+panjang,kecil,rendah ,tinggi,normal
+pendek,kecil,tinggi,tinggi,normal
+panjang,besar,tinggi,tinggi,normal
+panjang,kecil,rendah ,tinggi,normal
